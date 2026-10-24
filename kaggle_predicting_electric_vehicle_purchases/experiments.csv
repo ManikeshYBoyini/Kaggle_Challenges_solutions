@@ -1,0 +1,12 @@
+model,features,cv_auc,cv_logloss,notes,date
+logreg_v1,raw,0.938094,0.233295,one-hot + scaling,2026-10-17 15:07
+lgbm_v1,raw,0.941771,0.226571,default params,2026-10-17 15:09
+xgb_v1,raw,0.941857,0.226431,default params,2026-10-17 15:11
+cat_v1,raw,0.941772,0.226594,default params,2026-10-17 15:39
+lgbm_optuna,raw,0.942828,0.224683,"optuna 46 trials, lr 0.02",2026-10-17 15:59
+lgbm_fe,raw+A,0.942806,0.22473,lgbm with kept feature groups,2026-10-17 16:12
+cat_fe,raw+A,0.941778,0.226582,catboost with kept feature groups,2026-10-17 16:39
+lgbm_orig,raw+orig way B,0.942877,0.224594,"original dataset, way B, lr 0.05",2026-10-17 18:07
+blend_mean,lgbm_orig+lgbm_optuna,0.942988,,ensemble,2026-10-17 18:07
+blend_rank,lgbm_orig+lgbm_optuna,0.942989,,ensemble,2026-10-17 18:07
+blend_stack,lgbm_orig+lgbm_optuna,0.942986,0.224397,ensemble,2026-10-17 18:07

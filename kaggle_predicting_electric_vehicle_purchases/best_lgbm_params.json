@@ -1,0 +1,10 @@
+{
+  "num_leaves": 25,
+  "min_child_samples": 186,
+  "feature_fraction": 0.40542747440682847,
+  "bagging_fraction": 0.968336511497273,
+  "lambda_l1": 0.00368464480823872,
+  "lambda_l2": 0.3527941199754003,
+  "max_bin": 511,
+  "cat_smooth": 3.282184184531182
+}
